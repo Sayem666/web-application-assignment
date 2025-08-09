@@ -35,3 +35,16 @@ if ($conn->query($sql) === TRUE) {
 // Close connection
 $conn->close();
 ?>
+<!--  CREATE DATABASE restaurant_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) ,
+    email VARCHAR(100)  UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    address TEXT,
+    phone VARCHAR(20),
+    gender ENUM('Male', 'Female', 'Other'),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+-->
